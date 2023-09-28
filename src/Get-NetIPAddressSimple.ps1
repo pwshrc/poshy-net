@@ -5,7 +5,7 @@ Set-StrictMode -Version Latest
 
 <#
 .SYNOPSIS
-    Get all IP addresses for this host.
+    Get all IP addresses bound on this host.
 #>
 function Get-NetIPAddressSimple {
     Get-NetIPAddress @args | Select-Object -ExpandProperty IPAddress
